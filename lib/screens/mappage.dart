@@ -60,6 +60,8 @@ class _MapScreenState extends State<MapScreen> {
                   padding: EdgeInsets.only(left: 20, right: 20, bottom: 10),
                   child: ElevatedButton(
                     onPressed: () {
+                      print("globals.globalLocationData");
+                      print(globals.globalLocationData);
                       Navigator.pushNamed(context, '/info');
                     },
                     child: Text(
