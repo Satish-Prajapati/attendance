@@ -23,7 +23,8 @@ class InfoScreenState extends State<InfoScreen> {
 
   static final Marker _kGooglePlexMarker = Marker(
     markerId: MarkerId('_kGooglePlex'),
-    infoWindow: InfoWindow(title: 'Google Ple'),
+    infoWindow:
+        InfoWindow(title: 'Time: $time, Location: $latitude $longitude'),
     icon: BitmapDescriptor.defaultMarker,
     position: LatLng(latitude!, longitude!),
   );
